@@ -1,4 +1,7 @@
-# Hestia #
+# TEDxUMN #
+This is the template for the TEDxUMN.com website, powered by WordPress.
+
+## This theme is a duplication and customization of Hestia by ThemeIsle ##
 Hestia Pro is a modern WordPress theme for professionals. It fits creative business, small businesses, startups, corporate businesses, online agencies and firms, portfolios, e-commerce (WooCommerce), and freelancers. It has a multipurpose one-page design, widgetized footer, and a clean look. The theme is responsive, WPML, Retina ready, SEO friendly, and uses Material Kit for design.
 # Installation #
 1. After downloading the zip file, go to Appearance > Themes and click on the *Install Themes* tab.
@@ -47,13 +50,6 @@ header.jpg - https://unsplash.com/photos/He8-FZl-o10
 contact.jpg - https://unsplash.com/search/city-night-black?photo=uMH-d3WWJhM
 
 
-License: All pexels.com images are licensed under the terms of the Creative Commons Zero, http://creativecommons.org/publicdomain/zero/1.0/	
+License: All pexels.com images are licensed under the terms of the Creative Commons Zero, http://creativecommons.org/publicdomain/zero/1.0/
 
 about.jpg - https://www.pexels.com/photo/woman-phone-call-working-work-space-29594/
-
-
-# Changelog #
-
-## Version 1.0 ##
-
-- Initial Release.
