@@ -33,7 +33,7 @@
 							<span class="icon-bar"></span>
 						</button>
 						<div class="title-logo-wrapper">
-							<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php echo hestia_logo(); ?></a>
+							<a class="navbar-brand" style="padding: 0px 15px" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo( 'name' ); ?>"><?php echo hestia_logo(); ?></a>
 						</div>
 					</div>
 					<?php

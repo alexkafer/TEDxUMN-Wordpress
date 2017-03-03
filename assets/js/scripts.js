@@ -26,11 +26,13 @@ jQuery(document).ready(function($) {
 				if (transparent) {
 					transparent = false;
 					$( '.navbar-color-on-scroll' ).removeClass( 'navbar-transparent' );
+					$( '#main_TEDxUMN_logo' ).fadeIn();
 				}
 			} else {
 				if (!transparent) {
 					transparent = true;
 					$( '.navbar-color-on-scroll' ).addClass( 'navbar-transparent' );
+					$( '#main_TEDxUMN_logo' ).hide();
 				}
 			}
 		}, 17));
@@ -281,7 +283,7 @@ jQuery(document).ready(function($) {
 				var hestia_offset = $(this).offset().top; // distance between top and our section
 				var thisHeight = $(this).outerHeight(); // section height
 				var thisBegin = hestia_offset - headerHeight; // where the section begins
-				var thisEnd = hestia_offset + thisHeight - headerHeight; // where the section ends  
+				var thisEnd = hestia_offset + thisHeight - headerHeight; // where the section ends
 				// if position of the cursor is inside of the this section
 				if (hestia_scrollTop >= thisBegin && hestia_scrollTop <= thisEnd) {
 					isInOneSection = 'yes';
@@ -309,4 +311,3 @@ jQuery(document).ready(function($) {
 	});
 
 });
-
