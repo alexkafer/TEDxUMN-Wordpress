@@ -32,7 +32,7 @@ jQuery(document).ready(function($) {
 				if (!transparent) {
 					transparent = true;
 					$( '.navbar-color-on-scroll' ).addClass( 'navbar-transparent' );
-					$( '#main_TEDxUMN_logo' ).hide();
+					$( '#main_TEDxUMN_logo' ).fadeOut();
 				}
 			}
 		}, 17));
