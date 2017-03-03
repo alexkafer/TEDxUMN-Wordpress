@@ -35,7 +35,7 @@ if ( ! function_exists( 'hestia_logo' ) ) :
 	function hestia_logo() {
 		if ( get_theme_mod( 'custom_logo' ) ) {
 			$logo = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ) , 'full' );
-			$logo = '<img id="main_TEDxUMN_logo" src="' . esc_url( $logo[0] ) . '">';
+			$logo = '<img id="main_TEDxUMN_logo" style="display: none;" src="' . esc_url( $logo[0] ) . '">';
 		} else {
 			if ( is_front_page() ) {
 				$logo = '<h1>' . get_bloginfo( 'name' ) . '</h1>';
