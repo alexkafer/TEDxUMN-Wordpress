@@ -63,4 +63,3 @@ if ( is_active_sidebar( 'sidebar-1' ) && ( $hestia_remove_sidebar_on_single_post
 		get_sidebar();
 } ?>
 </div>
-

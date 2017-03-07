@@ -3445,6 +3445,10 @@ table > tbody > tr {
 }
 
 .page-header.header-small {
+	height: 25vh;
+}
+
+.page-header.header-normal {
 	height: 65vh;
 }
 
