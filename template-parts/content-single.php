@@ -30,34 +30,7 @@ if ( is_active_sidebar( 'sidebar-1' ) && ( $hestia_remove_sidebar_on_single_post
 			?>
 		</article>
 
-		<div class="section section-blog-info">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="entry-categories"><?php _e( 'Categories:', 'hestia-pro' ); ?>
-						<?php
-						$categories = get_the_category( $post->ID );
-						foreach ( $categories as $category ) {
-							echo '<span class="label label-primary"><a href="' . esc_url( get_category_link( $category->term_id ) ) . '">' . esc_html( $category->name ) . '</a></span>';
-						}
-						?>
-					</div>
-					<?php the_tags( '<div class="entry-tags">' . esc_html__( 'Tags: ', 'hestia-pro' ) . '<span class="entry-tag">', '</span><span class="entry-tag">', '</span></div>' ); ?>
-				</div>
-				<div class="col-md-6">
-					<?php do_action( 'hestia_blog_social_icons' ); ?>
-				</div>
-			</div>
-			<hr>
-			<?php
-			$author_description = get_the_author_meta( 'description' );
-			if ( ! empty( $author_description ) ) :
-				hestia_author_box();
-			endif;
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-			?>
-		</div>
+		
 	</div>
 	<?php if ( $hestia_remove_sidebar_on_single_post != true ) {
 		get_sidebar();

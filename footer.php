@@ -11,9 +11,8 @@
 
 $hestia_general_credits = get_theme_mod( 'hestia_general_credits',
 	sprintf(
-		esc_html__( '%1$s | Powered by %2$s', 'hestia-pro' ),
-		sprintf( '<a href="https://themeisle.com/themes/hestia/" target="_blank" rel="nofollow">%s</a>', esc_html__( 'Hestia', 'hestia-pro' ) ),
-	sprintf( '<a href="http://wordpress.org/" rel="nofollow">%s</a>', esc_html__( 'WordPress', 'hestia-pro' ) ) )
+		esc_html__( '%1$s', 'hestia-pro' ),
+		sprintf( '<a href="https://github.com/alexkafer/TEDxUMN" target="_blank" rel="nofollow">Website Source Code on GitHub</a>', esc_html__( 'Hestia', 'hestia-pro' ) ))
 ); ?>
 
 				<footer class="footer footer-black footer-big">

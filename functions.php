@@ -251,6 +251,19 @@ function hestia_body_classes( $classes ) {
 
 add_filter( 'body_class', 'hestia_body_classes' );
 
+// Used to remove Category: from the title on archive pages.
+add_filter( 'get_the_archive_title', function ( $title ) {
+
+    if( is_category() ) {
+
+        $title = single_cat_title( '', false );
+
+    }
+
+    return $title;
+
+});
+
 /**
  * Define excerpt length.
  *
@@ -586,6 +599,4 @@ function hestia_themeisle_sdk(){
 	);
 }
 
-hestia_themeisle_sdk(); 
-
- 
+hestia_themeisle_sdk();

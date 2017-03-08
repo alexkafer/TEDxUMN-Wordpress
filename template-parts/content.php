@@ -39,7 +39,6 @@
 						?>
 					</p>
 				</div>
-				<div class="author"><?php printf( esc_html__( 'By %1$s, %2$s', 'hestia-pro' ), sprintf( '<a href="%2$s" title="%1$s"><b>%1$s</b></a>', esc_html( get_the_author() ), esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) ), sprintf( esc_html__( '%1$s ago %2$s','hestia-pro' ), sprintf( '<a href="%2$s"><time>%1$s</time>', esc_html( human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) ), esc_url( get_permalink() ) ), '</a>' ) ); ?></div>
 			</div>
 		</div>
 

@@ -10,7 +10,7 @@
  */
 
 get_header(); ?>
-			<div id="primary" class="page-header header-filter header-small" data-parallax="active" style="background-image: url('<?php echo hestia_featured_header(); ?>');">
+			<div id="primary" class="page-header header-filter header" data-parallax="active" style="background-image: url('<?php echo hestia_featured_header(); ?>');">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center">

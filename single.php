@@ -17,8 +17,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<?php single_post_title( '<h1 class="title">', '</h1>' ); ?>
-						<h4 class="author"><?php printf( esc_html__( 'Published by %1$s on %2$s', 'hestia-pro' ), sprintf( '<a href="%2$s"><b>%1$s</b></a>', esc_html( hestia_get_author( 'display_name' ) ), esc_url( get_author_posts_url( hestia_get_author( 'ID' ) ) ) ), sprintf( '<time>%s</time>', esc_html( get_the_time( get_option( 'date_format' ) ) ) ) ); ?></h4>
-					</div>
+						</div>
 				</div>
 			</div>
 			<div class="blog-post">

@@ -21,22 +21,23 @@ get_header(); ?>
 	do_action( 'hestia_header' );
 	?>
 	</header>
-	<div class="<?php echo esc_html( hestia_layout() ); ?>">
-		<?php
-		/**
-		 * Hestia Sections hook.
-		 *
-		 * @hooked hestia_features_section - 1
-		 * @hooked hestia_about_section - 2
-		 * @hooked hestia_shop_section - 3
-		 * @hooked hestia_portfolio_section - 4
-		 * @hooked hestia_team_section - 5
-		 * @hooked hestia_pricing_section - 6
-		 * @hooked hestia_testimonials_section - 7
-		 * @hooked hestia_subscribe_section - 8
-		 * @hooked hestia_blog_section - 9
-		 * @hooked hestia_contact_section - 10
-		 */
-		do_action( 'hestia_sections' );
-	?>
+	<div class="<?php echo hestia_layout(); ?>">
+		<div class="blogs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+					<?php
+					if ( have_posts() ) :
+						while ( have_posts() ) : the_post();
+							get_template_part( 'template-parts/content' );
+						endwhile;
+						hestia_pagination();
+					else :
+						get_template_part( 'template-parts/content', 'none' );
+					endif;
+					?>
+					</div>
+				</div>
+			</div>
+		</div>
 <?php get_footer(); ?>
