@@ -91,7 +91,7 @@ if ( ! function_exists( 'hestia_setup' ) ) {
 		));
 
 		// Adding image sizes. https://developer.wordpress.org/reference/functions/add_image_size/
-		add_image_size( 'hestia-blog', 800, 534, true );
+		add_image_size( 'hestia-blog', 534, 534, true );
 		add_image_size( 'hestia-shop', 390, 585, true );
 		add_image_size( 'hestia-portfolio', 540, 360, true );
 
