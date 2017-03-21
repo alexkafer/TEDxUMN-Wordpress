@@ -46,7 +46,7 @@
 <div class="item">
 		<div class="card--new">
 			<a style="margin: auto;" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-				<?php the_post_thumbnail( 'hestia-blog', ['class' => 'circular--landscape'] ); ?>
+				<?php the_post_thumbnail( 'hestia-blog', ['class' => 'circular--landscape center-block'] ); ?>
 			</a>
 			<div class="card--new--container">
 					<h4><b><?php the_title( sprintf( '<h2 class="card-title"><a href="%s" title="%s" rel="bookmark">', esc_url( get_permalink() ), esc_attr( get_the_title() ) ), '</a></h2>' ); ?></b></h4>

@@ -2379,10 +2379,11 @@ h2.title {
 # Cards styling
 --------------------------------------------------------------*/
 .circular--landscape {
-	display: inline-block;
+	display: block;
+	padding-top: 5px;
 	position: relative;
 	width: 200px;
-	height: 200px;
+	height: 205px;
 	overflow: hidden;
 	border-radius: 50%;
 }
